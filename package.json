@@ -1,9 +1,13 @@
 {
-  "name": "FriendFinder",
+  "name": "friendfinder",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
-  "dependencies": {},
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "npm": "^6.1.0"
+  },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,5 +15,13 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lspro333/FriendFinder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lspro333/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/lspro333/FriendFinder#readme"
 }

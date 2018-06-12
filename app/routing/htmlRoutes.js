@@ -1,11 +1,14 @@
-// GET route to survey page
-// =============================================================
-app.get("/survey", function (req, res) {
-    res.sendFile(path.join(__dirname, "survey.html"))
-});
+var path = require("path");
 
-// Catch-all route that displays the homepage
-// =============================================================
-app.get("/home", function (req, res) {
-    res.sendFile(path.join(__dirname, "home.html"))
-});
+module.exports = function (app){
+
+    app.get("/survey", function (req, res) {
+        res.sendFile(path.join(__dirname, "/../public/survey.html"))
+    });
+
+    app.use(function (req, res) {
+        res.sendFile(path.join(__dirname, "/../public/home.html"))
+    });
+
+}
+
